@@ -1,0 +1,154 @@
+/*Definição da fonte da página*/
+* {
+    font-family: sans-serif;
+}
+
+/*Adicionando rolagem suave ao clicar em algum botão do menu*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Configurações do cabeçalho*/
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    background-color: #ff8906;
+}
+
+/*Configurações do menu*/
+ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+/*Colocando os botões do menu um ao lado do outro*/
+li {
+    display: inline;
+}
+
+/*Retirando sublinhado da lista de links (botões do menu)*/
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+/*Animação em cor ao passar o mouse em alguma das opções do menu*/
+li a:hover {
+    background-color: darkgrey;
+}
+
+/*Configurações dos botões do menu*/
+.botao-menu {
+    padding: 6px;
+}
+
+/*Configurações do corpo da página*/
+main {
+    display: flex;
+    display: inline-block;
+    text-align: justify;
+    background-color: #fffffe;
+}
+
+/*Alinhando os títulos das seções ao centro da página*/
+h2 {
+    text-align: center;
+}
+
+/*Tamanho da imagem na página*/
+.img-secao {
+    height: 20%;
+    width: 20%;
+}
+
+/*Configurações do rodapé*/
+footer {
+    text-align: center;
+    font-weight: 900;
+    font-size: large;
+    padding: 10px;
+    background-color: #ff8906;
+    width: 100%;
+}
+
+/*Tamanho dos ícones da redes sociais*/
+.img-redes {
+    height: 3%;
+    width: 3%;
+}
+
+/*Animação em cor ao passar o mouse em cima de algum ícone de rede social*/
+.img-redes:hover {
+    background-color: white;
+}
+
+/*----------Menu mobile responsivo----------*/
+
+/**/
+.menu-mobile{
+    display: none;
+    position: absolute;
+}
+
+/**/
+.mostra-menu{
+    display: block;
+}
+  
+/*Media Queries menu mobile*/
+@media (max-width: 500px) {
+
+    /**/
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /**/
+    ul{
+      display: none;
+      padding-left: 0;
+    }
+
+    /**/
+    ul li{
+      display: block;
+      padding: 1rem 0;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+    }
+
+    /**/
+    ul li:last-child {
+        border: none;
+    }
+
+    /**/
+    .menu-mobile {
+        display: block;
+    }
+
+    /**/
+    .menu-mobile img {
+        width: 2.5rem;
+    }
+}
+
+/*----------Imagens responsivas----------*/
+
+/*Media Queries imagens*/
+@media (max-width: 500px) {
+
+    /**/
+    .img-redes {
+        max-width: 100%;
+    }
+
+    /**/
+    .img-secao {
+        max-width: 100%;
+    }
+}
