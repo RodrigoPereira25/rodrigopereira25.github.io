@@ -64,6 +64,11 @@ h2 {
     width: 20%;
 }
 
+/*Ajustando imagem da seção ao centro da página*/
+.ajustar-imagem {
+    text-align: center;
+}
+
 /*Configurações do rodapé*/
 footer {
     text-align: center;
